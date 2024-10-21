@@ -1,0 +1,1702 @@
+[2024-10-18T10:42:25.885-0300] {processor.py:161} INFO - Started process (PID=10526) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:42:25.885-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:42:25.887-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:42:25.887-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:42:35.096-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:42:35.086-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo1_bronze.py", line 6, in <module>
+    table1_customers.coalesce(1).write.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 1721, in parquet
+    self._jwrite.parquet(path)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_ALREADY_EXISTS] Path file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet already exists. Set mode as "overwrite" to overwrite the existing path.
+[2024-10-18T10:42:35.100-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:42:35.118-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 9.238 seconds
+[2024-10-18T10:43:31.420-0300] {processor.py:161} INFO - Started process (PID=11441) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:43:31.422-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:43:31.426-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:43:31.425-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:43:39.337-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:43:39.330-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo1_bronze.py", line 6, in <module>
+    table1_customers.coalesce(1).write.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 1721, in parquet
+    self._jwrite.parquet(path)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_ALREADY_EXISTS] Path file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet already exists. Set mode as "overwrite" to overwrite the existing path.
+[2024-10-18T10:43:39.340-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:43:39.355-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 7.947 seconds
+[2024-10-18T10:44:34.685-0300] {processor.py:161} INFO - Started process (PID=11930) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:44:34.687-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:44:34.689-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:44:34.689-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:44:44.043-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:44:44.033-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo1_bronze.py", line 6, in <module>
+    table1_customers.coalesce(1).write.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 1721, in parquet
+    self._jwrite.parquet(path)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_ALREADY_EXISTS] Path file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet already exists. Set mode as "overwrite" to overwrite the existing path.
+[2024-10-18T10:44:44.047-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:44:44.067-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 9.395 seconds
+[2024-10-18T10:45:38.243-0300] {processor.py:161} INFO - Started process (PID=12644) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:45:38.245-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:45:38.246-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:45:38.246-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:45:50.151-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:45:50.144-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:45:50.154-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:45:50.170-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 11.931 seconds
+[2024-10-18T10:46:47.165-0300] {processor.py:161} INFO - Started process (PID=13405) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:46:47.168-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:46:47.170-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:46:47.170-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:46:55.219-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:46:55.204-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo1_bronze.py", line 6, in <module>
+    table1_customers.coalesce(1).write.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 1721, in parquet
+    self._jwrite.parquet(path)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_ALREADY_EXISTS] Path file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet already exists. Set mode as "overwrite" to overwrite the existing path.
+[2024-10-18T10:46:55.226-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:46:55.247-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 8.092 seconds
+[2024-10-18T10:48:52.970-0300] {processor.py:161} INFO - Started process (PID=14730) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:48:52.971-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:48:52.973-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:48:52.973-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:49:07.315-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:49:07.304-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:49:07.318-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:49:07.336-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 14.372 seconds
+[2024-10-18T10:50:01.981-0300] {processor.py:161} INFO - Started process (PID=15569) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:50:01.984-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:50:01.988-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:50:01.987-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:50:14.440-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:50:14.432-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:50:14.444-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:50:14.460-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 12.490 seconds
+[2024-10-18T10:51:07.117-0300] {processor.py:161} INFO - Started process (PID=16337) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:51:07.120-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:51:07.121-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:51:07.121-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:51:18.337-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:51:18.329-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:51:18.344-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:51:18.361-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 11.248 seconds
+[2024-10-18T10:52:10.253-0300] {processor.py:161} INFO - Started process (PID=17089) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:52:10.256-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:52:10.257-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:52:10.257-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:52:22.336-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:52:22.329-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:52:22.340-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:52:22.355-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 12.106 seconds
+[2024-10-18T10:53:17.773-0300] {processor.py:161} INFO - Started process (PID=17864) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:53:17.775-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:53:17.776-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:53:17.776-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:53:30.538-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:53:30.530-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:53:30.542-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:53:30.559-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 12.793 seconds
+[2024-10-18T10:54:22.315-0300] {processor.py:161} INFO - Started process (PID=18779) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:54:22.318-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:54:22.319-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:54:22.319-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:54:34.083-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:54:34.077-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:54:34.087-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:54:34.103-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 11.792 seconds
+[2024-10-18T10:55:24.827-0300] {processor.py:161} INFO - Started process (PID=19558) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:55:24.828-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:55:24.829-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:55:24.829-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:55:36.646-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:55:36.638-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:55:36.649-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:55:36.666-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 11.844 seconds
+[2024-10-18T10:56:27.601-0300] {processor.py:161} INFO - Started process (PID=20391) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:56:27.604-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:56:27.605-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:56:27.605-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:56:40.942-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:56:40.926-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:56:40.948-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:56:40.984-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 13.388 seconds
+[2024-10-18T10:57:33.831-0300] {processor.py:161} INFO - Started process (PID=21301) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:57:33.832-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:57:33.833-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:57:33.833-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:57:46.545-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:57:46.535-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:57:46.549-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:57:46.575-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 12.749 seconds
+[2024-10-18T10:58:38.255-0300] {processor.py:161} INFO - Started process (PID=22116) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:58:38.256-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:58:38.259-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:58:38.258-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:58:52.890-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:58:52.879-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T10:58:52.896-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:58:52.918-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 14.675 seconds
+[2024-10-18T10:59:44.629-0300] {processor.py:161} INFO - Started process (PID=22895) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T10:59:44.632-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T10:59:44.635-0300] {logging_mixin.py:188} INFO - [2024-10-18T10:59:44.634-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:00:00.861-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:00:00.849-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:00:00.868-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:00:00.895-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.277 seconds
+[2024-10-18T11:00:51.828-0300] {processor.py:161} INFO - Started process (PID=23671) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:00:51.830-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:00:51.831-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:00:51.831-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:01:03.671-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:01:03.664-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:01:03.675-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:01:03.693-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 11.869 seconds
+[2024-10-18T11:01:55.338-0300] {processor.py:161} INFO - Started process (PID=24394) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:01:55.340-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:01:55.343-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:01:55.342-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:02:10.399-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:02:10.386-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:02:10.405-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:02:10.432-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 15.101 seconds
+[2024-10-18T11:07:33.653-0300] {processor.py:161} INFO - Started process (PID=25897) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:07:33.654-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:07:33.655-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:07:33.655-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:07:46.693-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:07:46.684-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:07:46.698-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:07:46.713-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 13.064 seconds
+[2024-10-18T11:08:44.538-0300] {processor.py:161} INFO - Started process (PID=26821) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:08:44.541-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:08:44.544-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:08:44.544-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:09:01.681-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:09:01.665-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:09:01.687-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:09:01.719-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 17.191 seconds
+[2024-10-18T11:09:57.098-0300] {processor.py:161} INFO - Started process (PID=27514) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:09:57.099-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:09:57.102-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:09:57.101-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:10:13.810-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:10:13.800-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:10:13.816-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:10:13.840-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.748 seconds
+[2024-10-18T11:11:06.785-0300] {processor.py:161} INFO - Started process (PID=28278) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:11:06.787-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:11:06.789-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:11:06.788-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:11:25.819-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:11:25.806-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:11:25.831-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:11:25.855-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.075 seconds
+[2024-10-18T11:12:21.159-0300] {processor.py:161} INFO - Started process (PID=29062) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:12:21.161-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:12:21.162-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:12:21.162-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:12:38.605-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:12:38.594-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:12:38.609-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:12:38.630-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 17.478 seconds
+[2024-10-18T11:13:31.337-0300] {processor.py:161} INFO - Started process (PID=29753) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:13:31.339-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:13:31.342-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:13:31.341-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:13:43.350-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:13:43.337-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo2_silver.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/bronze/customers.parquet/part-00000-c484f4d4-24a8-43a5-a5c3-4b192b97dfdd-c000.snappy.parquet.
+[2024-10-18T11:13:43.355-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:13:43.373-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 12.046 seconds
+[2024-10-18T11:21:50.548-0300] {processor.py:161} INFO - Started process (PID=31203) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:21:50.549-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:21:50.551-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:21:50.550-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:22:06.769-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:22:06.756-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+  File "/home/beatriz/Documentos/airflow/dags/tarefas/passo3_gold.py", line 5, in <module>
+    table1_customers = spark.read.parquet('/home/beatriz/Documentos/airflow/lakehouse/silver/customers.parquet/part-00000-7e53d14f-5cec-49c0-877b-7a604c5801e5-c000.snappy.parquet')
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/beatriz/Documentos/airflow/lakehouse/silver/customers.parquet/part-00000-7e53d14f-5cec-49c0-877b-7a604c5801e5-c000.snappy.parquet.
+[2024-10-18T11:22:06.775-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:22:06.794-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.253 seconds
+[2024-10-18T11:23:02.847-0300] {processor.py:161} INFO - Started process (PID=32085) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:23:02.850-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:23:02.854-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:23:02.853-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:23:23.357-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:23:23.353-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:23:23.358-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:23:23.379-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 20.545 seconds
+[2024-10-18T11:24:16.303-0300] {processor.py:161} INFO - Started process (PID=33226) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:24:16.305-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:24:16.309-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:24:16.308-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:24:36.091-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:24:36.089-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:24:36.092-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:24:36.118-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.828 seconds
+[2024-10-18T11:25:29.160-0300] {processor.py:161} INFO - Started process (PID=34248) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:25:29.163-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:25:29.165-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:25:29.164-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:25:47.374-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:25:47.372-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:25:47.374-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:25:47.395-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 18.242 seconds
+[2024-10-18T11:26:43.778-0300] {processor.py:161} INFO - Started process (PID=35228) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:26:43.781-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:26:43.783-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:26:43.782-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:27:02.951-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:27:02.949-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:27:02.952-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:27:02.977-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.207 seconds
+[2024-10-18T11:27:55.905-0300] {processor.py:161} INFO - Started process (PID=36273) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:27:55.908-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:27:55.911-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:27:55.910-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:28:15.443-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:28:15.441-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:28:15.443-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:28:15.470-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.578 seconds
+[2024-10-18T11:29:09.339-0300] {processor.py:161} INFO - Started process (PID=37231) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:29:09.342-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:29:09.346-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:29:09.345-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:29:33.728-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:29:33.725-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:29:33.729-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:29:33.755-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 24.429 seconds
+[2024-10-18T11:30:26.548-0300] {processor.py:161} INFO - Started process (PID=38382) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:30:26.551-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:30:26.554-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:30:26.554-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:30:42.421-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:30:42.419-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:30:42.421-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:30:42.440-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 15.909 seconds
+[2024-10-18T11:31:33.219-0300] {processor.py:161} INFO - Started process (PID=39314) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:31:33.221-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:31:33.225-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:31:33.224-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:31:48.781-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:31:48.779-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:31:48.782-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:31:48.807-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 15.598 seconds
+[2024-10-18T11:32:39.537-0300] {processor.py:161} INFO - Started process (PID=40346) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:32:39.540-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:32:39.541-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:32:39.541-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:32:58.343-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:32:58.341-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:32:58.344-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:32:58.369-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 18.836 seconds
+[2024-10-18T11:33:50.082-0300] {processor.py:161} INFO - Started process (PID=41258) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:33:50.085-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:33:50.088-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:33:50.087-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:34:10.938-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:34:10.937-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:34:10.939-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:34:10.961-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 20.892 seconds
+[2024-10-18T11:35:03.821-0300] {processor.py:161} INFO - Started process (PID=42221) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:35:03.825-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:35:03.829-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:35:03.828-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:35:27.763-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:35:27.758-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:35:27.765-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:35:27.803-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 23.996 seconds
+[2024-10-18T11:36:22.622-0300] {processor.py:161} INFO - Started process (PID=43207) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:36:22.624-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:36:22.626-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:36:22.625-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:36:43.402-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:36:43.399-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:36:43.403-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:36:43.436-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 20.818 seconds
+[2024-10-18T11:37:35.965-0300] {processor.py:161} INFO - Started process (PID=44256) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:37:35.967-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:37:35.969-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:37:35.969-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:37:54.826-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:37:54.824-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:37:54.827-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:37:54.852-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 18.893 seconds
+[2024-10-18T11:38:48.472-0300] {processor.py:161} INFO - Started process (PID=45145) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:38:48.475-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:38:48.476-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:38:48.476-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:39:05.736-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:39:05.734-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:39:05.737-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:39:05.762-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 17.294 seconds
+[2024-10-18T11:39:57.203-0300] {processor.py:161} INFO - Started process (PID=46141) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:39:57.205-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:39:57.207-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:39:57.207-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:40:15.808-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:40:15.806-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:40:15.808-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:40:15.828-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 18.631 seconds
+[2024-10-18T11:40:40.687-0300] {processor.py:161} INFO - Started process (PID=46987) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:40:40.689-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:40:40.691-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:40:40.690-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:40:40.693-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:40:40.692-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 11
+    python_callable=passo1_bronze'
+                                 ^
+SyntaxError: unterminated string literal (detected at line 11)
+[2024-10-18T11:40:40.693-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:40:40.709-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.027 seconds
+[2024-10-18T11:41:10.587-0300] {processor.py:161} INFO - Started process (PID=47259) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:41:10.589-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:41:10.590-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:41:10.590-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:41:32.410-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:41:32.408-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:41:32.411-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:41:32.436-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 21.854 seconds
+[2024-10-18T11:42:23.478-0300] {processor.py:161} INFO - Started process (PID=48554) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:42:23.481-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:42:23.484-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:42:23.483-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:42:44.911-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:42:44.910-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:42:44.912-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:42:44.930-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 21.459 seconds
+[2024-10-18T11:43:37.290-0300] {processor.py:161} INFO - Started process (PID=49615) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:43:37.293-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:43:37.297-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:43:37.296-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:43:53.854-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:43:53.852-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:43:53.855-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:43:53.884-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.606 seconds
+[2024-10-18T11:44:43.800-0300] {processor.py:161} INFO - Started process (PID=50485) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:44:43.803-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:44:43.804-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:44:43.804-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:45:00.610-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:45:00.609-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:45:00.611-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:45:00.629-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.833 seconds
+[2024-10-18T11:45:53.247-0300] {processor.py:161} INFO - Started process (PID=51562) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:45:53.250-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:45:53.253-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:45:53.252-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:46:12.427-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:46:12.425-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:46:12.428-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:46:12.453-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.219 seconds
+[2024-10-18T11:47:03.939-0300] {processor.py:161} INFO - Started process (PID=52520) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:47:03.941-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:47:03.943-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:47:03.943-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:47:20.038-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:47:20.037-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:47:20.039-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:47:20.079-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.147 seconds
+[2024-10-18T11:48:12.808-0300] {processor.py:161} INFO - Started process (PID=53520) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:48:12.811-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:48:12.812-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:48:12.812-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:48:28.949-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:48:28.946-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:48:28.950-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:48:28.986-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.182 seconds
+[2024-10-18T11:49:21.869-0300] {processor.py:161} INFO - Started process (PID=54468) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:49:21.869-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:49:21.871-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:49:21.871-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:49:37.483-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:49:37.481-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:49:37.484-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:49:37.507-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 15.644 seconds
+[2024-10-18T11:50:29.111-0300] {processor.py:161} INFO - Started process (PID=55538) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:50:29.113-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:50:29.114-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:50:29.114-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:50:45.274-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:50:45.272-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:50:45.274-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:50:45.300-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.193 seconds
+[2024-10-18T11:51:36.859-0300] {processor.py:161} INFO - Started process (PID=56483) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:51:36.860-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:51:36.862-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:51:36.861-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:51:53.249-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:51:53.247-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:51:53.249-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:51:53.269-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.414 seconds
+[2024-10-18T11:52:44.918-0300] {processor.py:161} INFO - Started process (PID=57426) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:52:44.922-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:52:44.925-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:52:44.924-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:53:00.505-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:53:00.503-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:53:00.505-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:53:00.528-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 15.623 seconds
+[2024-10-18T11:53:51.875-0300] {processor.py:161} INFO - Started process (PID=58307) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:53:51.878-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:53:51.882-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:53:51.881-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:54:09.476-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:54:09.474-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:54:09.477-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:54:09.502-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 17.639 seconds
+[2024-10-18T11:55:00.628-0300] {processor.py:161} INFO - Started process (PID=59245) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:55:00.629-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:55:00.631-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:55:00.631-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:55:18.613-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:55:18.611-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:55:18.613-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:55:18.634-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 18.013 seconds
+[2024-10-18T11:56:12.371-0300] {processor.py:161} INFO - Started process (PID=60199) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:56:12.374-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:56:12.377-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:56:12.377-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:56:33.706-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:56:33.704-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:56:33.707-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:56:33.734-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 21.375 seconds
+[2024-10-18T11:56:59.267-0300] {processor.py:161} INFO - Started process (PID=61192) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:56:59.270-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:56:59.274-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:56:59.273-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:57:17.730-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:57:17.727-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:57:17.730-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:57:17.765-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 18.511 seconds
+[2024-10-18T11:57:47.888-0300] {processor.py:161} INFO - Started process (PID=62122) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:57:47.889-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:57:47.891-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:57:47.891-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:58:06.998-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:58:06.996-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:58:06.998-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:58:07.017-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.141 seconds
+[2024-10-18T11:58:59.345-0300] {processor.py:161} INFO - Started process (PID=63066) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:58:59.346-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T11:58:59.347-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:58:59.347-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:59:16.416-0300] {logging_mixin.py:188} INFO - [2024-10-18T11:59:16.414-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T11:59:16.417-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T11:59:16.439-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 17.098 seconds
+[2024-10-18T12:00:08.475-0300] {processor.py:161} INFO - Started process (PID=64041) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T12:00:08.477-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T12:00:08.479-0300] {logging_mixin.py:188} INFO - [2024-10-18T12:00:08.478-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T12:00:29.603-0300] {logging_mixin.py:188} INFO - [2024-10-18T12:00:29.602-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T12:00:29.604-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T12:00:29.632-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 21.162 seconds
+[2024-10-18T12:01:22.395-0300] {processor.py:161} INFO - Started process (PID=65025) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T12:01:22.397-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T12:01:22.399-0300] {logging_mixin.py:188} INFO - [2024-10-18T12:01:22.399-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:13:54.650-0300] {processor.py:161} INFO - Started process (PID=27183) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:13:54.652-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:13:54.654-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:13:54.653-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:13:54.656-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:13:54.655-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:13:54.656-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:13:54.671-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.026 seconds
+[2024-10-18T15:14:50.218-0300] {processor.py:161} INFO - Started process (PID=27626) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:14:50.220-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:14:50.224-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:14:50.223-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:14:50.230-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:14:50.229-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:14:50.231-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:14:50.252-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.047 seconds
+[2024-10-18T15:15:47.951-0300] {processor.py:161} INFO - Started process (PID=27847) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:15:47.954-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:15:47.958-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:15:47.957-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:15:47.964-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:15:47.963-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:15:47.965-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:15:47.986-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.047 seconds
+[2024-10-18T15:24:29.677-0300] {processor.py:161} INFO - Started process (PID=28453) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:24:29.678-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:24:29.680-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:24:29.679-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:24:29.682-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:24:29.681-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:24:29.682-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:24:29.698-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.025 seconds
+[2024-10-18T15:25:25.200-0300] {processor.py:161} INFO - Started process (PID=28868) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:25:25.203-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:25:25.207-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:25:25.206-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:25:25.213-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:25:25.212-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:25:25.214-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:25:25.235-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.047 seconds
+[2024-10-18T15:26:17.993-0300] {processor.py:161} INFO - Started process (PID=29034) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:26:17.996-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:26:17.999-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:26:17.998-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:26:18.004-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:26:18.003-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:26:18.005-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:26:18.028-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.046 seconds
+[2024-10-18T15:27:08.323-0300] {processor.py:161} INFO - Started process (PID=29211) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:27:08.326-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:27:08.330-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:27:08.329-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:27:08.335-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:27:08.334-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:27:08.336-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:27:08.357-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.045 seconds
+[2024-10-18T15:32:48.992-0300] {processor.py:161} INFO - Started process (PID=30536) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:32:48.993-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:32:48.995-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:32:48.994-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:32:48.997-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:32:48.996-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:32:48.997-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:32:49.016-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.031 seconds
+[2024-10-18T15:33:44.557-0300] {processor.py:161} INFO - Started process (PID=30843) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:33:44.559-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:33:44.560-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:33:44.560-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:33:44.563-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:33:44.562-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:33:44.563-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:33:44.578-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.025 seconds
+[2024-10-18T15:57:48.889-0300] {processor.py:161} INFO - Started process (PID=3906) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:57:48.890-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:57:48.892-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:57:48.891-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:57:48.894-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:57:48.893-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:57:48.894-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:57:48.907-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.022 seconds
+[2024-10-18T15:58:46.834-0300] {processor.py:161} INFO - Started process (PID=4789) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:58:46.837-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:58:46.839-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:58:46.838-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:58:46.843-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:58:46.842-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:58:46.844-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:58:46.864-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.038 seconds
+[2024-10-18T15:59:20.651-0300] {processor.py:161} INFO - Started process (PID=4988) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:59:20.652-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T15:59:20.653-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:59:20.652-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:59:20.655-0300] {logging_mixin.py:188} INFO - [2024-10-18T15:59:20.654-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T15:59:20.655-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T15:59:20.668-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.022 seconds
+[2024-10-18T16:00:10.617-0300] {processor.py:161} INFO - Started process (PID=5171) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:00:10.619-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:00:10.620-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:00:10.620-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:00:10.623-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:00:10.622-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:00:10.623-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:00:10.638-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.025 seconds
+[2024-10-18T16:00:57.653-0300] {processor.py:161} INFO - Started process (PID=5314) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:00:57.655-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:00:57.656-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:00:57.656-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:00:57.658-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:00:57.658-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:00:57.658-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:00:57.673-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.024 seconds
+[2024-10-18T16:01:48.196-0300] {processor.py:161} INFO - Started process (PID=5419) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:01:48.197-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:01:48.199-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:01:48.199-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:01:48.203-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:01:48.202-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:01:48.203-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:01:48.218-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.027 seconds
+[2024-10-18T16:02:33.918-0300] {processor.py:161} INFO - Started process (PID=5582) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:02:33.920-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:02:33.922-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:02:33.921-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:02:33.926-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:02:33.925-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:02:33.926-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:02:33.942-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.031 seconds
+[2024-10-18T16:03:16.770-0300] {processor.py:161} INFO - Started process (PID=5788) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:03:16.770-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:03:16.772-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:03:16.771-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:03:16.774-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:03:16.773-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:03:16.774-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:03:16.788-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.023 seconds
+[2024-10-18T16:03:57.391-0300] {processor.py:161} INFO - Started process (PID=6100) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:03:57.392-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:03:57.393-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:03:57.393-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:03:57.395-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:03:57.395-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:03:57.395-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:03:57.408-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.023 seconds
+[2024-10-18T16:04:53.017-0300] {processor.py:161} INFO - Started process (PID=6403) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:04:53.019-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:04:53.022-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:04:53.021-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:05:09.617-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:05:09.614-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T16:05:09.618-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:05:09.639-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 16.630 seconds
+[2024-10-18T16:05:54.876-0300] {processor.py:161} INFO - Started process (PID=7976) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:05:54.877-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:05:54.880-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:05:54.879-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:06:16.392-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:06:16.390-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T16:06:16.393-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:06:16.416-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 21.548 seconds
+[2024-10-18T16:07:14.838-0300] {processor.py:161} INFO - Started process (PID=9203) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:07:14.839-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:07:14.840-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:07:14.840-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:07:34.020-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:07:34.016-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T16:07:34.021-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:07:34.046-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.212 seconds
+[2024-10-18T16:08:25.760-0300] {processor.py:161} INFO - Started process (PID=10407) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:08:25.761-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:08:25.762-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:08:25.762-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:08:45.752-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:08:45.751-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T16:08:45.753-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:08:45.770-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 20.014 seconds
+[2024-10-18T16:09:08.376-0300] {processor.py:161} INFO - Started process (PID=11244) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:09:08.379-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:09:08.380-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:09:08.380-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:09:08.384-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:09:08.383-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from airflow.dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'airflow.dags'
+[2024-10-18T16:09:08.384-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:09:08.402-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.029 seconds
+[2024-10-18T16:09:40.910-0300] {processor.py:161} INFO - Started process (PID=11379) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:09:40.913-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:09:40.917-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:09:40.916-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:10:00.122-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:10:00.120-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 9, in <module>
+    task1 = PythonOperator(
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/python.py", line 222, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2024-10-18T16:10:00.122-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:10:00.145-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 19.247 seconds
+[2024-10-18T16:10:54.146-0300] {processor.py:161} INFO - Started process (PID=12507) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:10:54.148-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:10:54.150-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:10:54.150-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:10:54.153-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:10:54.152-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:10:54.153-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:10:54.167-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.025 seconds
+[2024-10-18T16:11:17.171-0300] {processor.py:161} INFO - Started process (PID=12697) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:11:17.174-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:11:17.175-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:11:17.175-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:11:17.178-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:11:17.177-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:11:17.178-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:11:17.194-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.028 seconds
+[2024-10-18T16:11:40.847-0300] {processor.py:161} INFO - Started process (PID=12999) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:11:40.848-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:11:40.851-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:11:40.850-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:11:40.856-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:11:40.854-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:11:40.856-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:11:40.876-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.035 seconds
+[2024-10-18T16:12:26.330-0300] {processor.py:161} INFO - Started process (PID=13164) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:12:26.333-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:12:26.336-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:12:26.335-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:12:26.342-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:12:26.341-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:12:26.343-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:12:26.364-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.046 seconds
+[2024-10-18T16:13:13.190-0300] {processor.py:161} INFO - Started process (PID=13461) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:13:13.192-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:13:13.194-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:13:13.193-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:13:13.196-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:13:13.195-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from dags.tarefas.tarefas import passo1_bronze, passo2_silver, passo3_gold
+ModuleNotFoundError: No module named 'dags'
+[2024-10-18T16:13:13.196-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:13:13.210-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.025 seconds
+[2024-10-18T16:14:00.235-0300] {processor.py:161} INFO - Started process (PID=13624) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:00.237-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:14:00.239-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:14:00.238-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:00.244-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:14:00.243-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:14:00.245-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:00.264-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.037 seconds
+[2024-10-18T16:14:23.228-0300] {processor.py:161} INFO - Started process (PID=13745) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:23.230-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:14:23.232-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:14:23.231-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:23.238-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:14:23.237-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 5, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:14:23.238-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:23.253-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.031 seconds
+[2024-10-18T16:14:46.873-0300] {processor.py:161} INFO - Started process (PID=13985) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:46.876-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:14:46.879-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:14:46.878-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:46.887-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:14:46.886-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 7, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:14:46.888-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:14:46.907-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.045 seconds
+[2024-10-18T16:15:30.663-0300] {processor.py:161} INFO - Started process (PID=14137) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:15:30.665-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:15:30.666-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:15:30.666-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:15:30.669-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:15:30.668-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 7, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:15:30.669-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:15:30.683-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.025 seconds
+[2024-10-18T16:15:57.492-0300] {processor.py:161} INFO - Started process (PID=14300) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:15:57.493-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:15:57.495-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:15:57.494-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:15:57.498-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:15:57.498-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 7, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:15:57.499-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:15:57.515-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.028 seconds
+[2024-10-18T16:16:53.168-0300] {processor.py:161} INFO - Started process (PID=14611) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:16:53.170-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:16:53.171-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:16:53.171-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:16:53.175-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:16:53.174-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 7, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:16:53.175-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:16:53.190-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.027 seconds
+[2024-10-18T16:17:47.404-0300] {processor.py:161} INFO - Started process (PID=14976) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:17:47.407-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:17:47.409-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:17:47.408-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:17:47.412-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:17:47.411-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 7, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:17:47.413-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:17:47.431-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.034 seconds
+[2024-10-18T16:18:29.380-0300] {processor.py:161} INFO - Started process (PID=15312) to work on /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:18:29.384-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/dags/dag2.py for tasks to queue
+[2024-10-18T16:18:29.387-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:18:29.386-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:18:29.395-0300] {logging_mixin.py:188} INFO - [2024-10-18T16:18:29.393-0300] {dagbag.py:350} ERROR - Failed to import: /home/beatriz/Documentos/airflow/dags/dag2.py
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/beatriz/Documentos/airflow/dags/dag2.py", line 3, in <module>
+    from tarefas import passo1_bronze, passo2_silver, passo3_gold
+ImportError: cannot import name 'passo1_bronze' from 'tarefas' (unknown location)
+[2024-10-18T16:18:29.396-0300] {processor.py:842} WARNING - No viable dags retrieved from /home/beatriz/Documentos/airflow/dags/dag2.py
+[2024-10-18T16:18:29.417-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/dags/dag2.py took 0.048 seconds
