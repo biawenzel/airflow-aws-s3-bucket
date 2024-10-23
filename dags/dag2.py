@@ -4,10 +4,8 @@ from airflow.models import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 
-# Adicione o caminho do diretório 'dags' ao sys.path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'tarefas'))
 
-# Agora você pode importar as funções corretamente
 from tarefas import passo1_bronze, passo2_silver, passo3_gold
 
 with DAG(
@@ -32,5 +30,4 @@ with DAG(
         python_callable=passo3_gold
     )
 
-    task1 >> task3
-    task2 >> task3
+    task1 >> task2 >> task3

@@ -11,8 +11,7 @@ Step by step:
 3. Create 1 Python script with 3 different funcitons, one for each transformation step (as I did in 'tarefas.py')
 4. Create an airflow dag to execute all the python scripts parallelizing the bronze and silver executions
 
-
-### Instalando o airflow
+### Installing airflow
 1. Update the system
 - `sudo apt update`
 - `sudo apt upgrade`
@@ -28,14 +27,16 @@ Step by step:
 - `export AIRFLOW_HOME=~/Documentos/airflow` (~/Documentos/airflow is the path to **my airflow directoy**, change it to yours)
 - `pip install apache-airflow==2.9.0 --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.0/constraints-3.10.txt"`
 
-### Inicializando o airflow 
+### Initializing airflow 
 **These steps should be done every time you initialize your airflow!**
 
 1. Open the terminal in your airflow directory (in **my** case: ~/Documentos/airflow) and activate the venv:
-`source airflow_venv/bin/activate`
+`source airflow_venv/bin/activate` 
+</br>
 
 2. Configure the environment variable
 `export AIRFLOW_HOME=~/Documentos/airflow` (change the directory path to yours)
+</br>
 
 3. Initialize airflow:
 `airflow standalone`
@@ -44,7 +45,14 @@ Step by step:
 
 4. Open the url to access your airflow UI:
 http://localhost:8080
+</br>
 
 5. At the end, always turn off your airflow application using the following commands on terminal:
 - ctrl + C
 - `deactivate`
+
+### Last configurations 
+1. Open the "airflow.cfg" file in your IDE
+![alt text](image-2.png)
+2. Comment out the existing dags_folder line and replace it with a new line specifying your dags folder path:
+![alt text](image-1.png)

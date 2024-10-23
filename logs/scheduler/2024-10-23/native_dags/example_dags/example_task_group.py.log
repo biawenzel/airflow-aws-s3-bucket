@@ -1,0 +1,14 @@
+[2024-10-23T09:45:48.619-0300] {processor.py:161} INFO - Started process (PID=8646) to work on /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-10-23T09:45:48.620-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-10-23T09:45:48.622-0300] {logging_mixin.py:188} INFO - [2024-10-23T09:45:48.622-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-10-23T09:45:48.634-0300] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-10-23T09:45:48.641-0300] {logging_mixin.py:188} INFO - [2024-10-23T09:45:48.641-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-10-23T09:45:48.657-0300] {logging_mixin.py:188} INFO - [2024-10-23T09:45:48.657-0300] {dag.py:3954} INFO - Setting next_dagrun for example_task_group to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-23T09:45:48.678-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.068 seconds
+[2024-10-23T10:46:44.332-0300] {processor.py:161} INFO - Started process (PID=16391) to work on /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-10-23T10:46:44.334-0300] {processor.py:830} INFO - Processing file /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2024-10-23T10:46:44.335-0300] {logging_mixin.py:188} INFO - [2024-10-23T10:46:44.335-0300] {dagbag.py:540} INFO - Filling up the DagBag from /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-10-23T10:46:44.344-0300] {processor.py:840} INFO - DAG(s) 'example_task_group' retrieved from /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py
+[2024-10-23T10:46:44.351-0300] {logging_mixin.py:188} INFO - [2024-10-23T10:46:44.351-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-10-23T10:46:44.370-0300] {logging_mixin.py:188} INFO - [2024-10-23T10:46:44.369-0300] {dag.py:3954} INFO - Setting next_dagrun for example_task_group to 2024-10-22 00:00:00+00:00, run_after=2024-10-23 00:00:00+00:00
+[2024-10-23T10:46:44.387-0300] {processor.py:183} INFO - Processing /home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group.py took 0.061 seconds
