@@ -1,0 +1,123 @@
+[2024-12-12T14:28:50.728-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-12-12T14:28:50.738-0300] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: medallion_architecture.spark_submit manual__2024-12-12T17:28:41.917821+00:00 [queued]>
+[2024-12-12T14:28:50.743-0300] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: medallion_architecture.spark_submit manual__2024-12-12T17:28:41.917821+00:00 [queued]>
+[2024-12-12T14:28:50.743-0300] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-12-12T14:28:50.757-0300] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): spark_submit> on 2024-12-12 17:28:41.917821+00:00
+[2024-12-12T14:28:50.761-0300] {standard_task_runner.py:63} INFO - Started process 161829 to run task
+[2024-12-12T14:28:50.761-0300] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-12-12T14:28:50.764-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'medallion_architecture', 'spark_submit', 'manual__2024-12-12T17:28:41.917821+00:00', '--job-id', '146', '--raw', '--subdir', 'DAGS_FOLDER/dag2.py', '--cfg-path', '/tmp/tmpd4p8w0je']
+[2024-12-12T14:28:50.766-0300] {standard_task_runner.py:91} INFO - Job 146: Subtask spark_submit
+[2024-12-12T14:28:50.794-0300] {task_command.py:426} INFO - Running <TaskInstance: medallion_architecture.spark_submit manual__2024-12-12T17:28:41.917821+00:00 [running]> on host beatriz-linux
+[2024-12-12T14:28:50.852-0300] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='medallion_architecture' AIRFLOW_CTX_TASK_ID='spark_submit' AIRFLOW_CTX_EXECUTION_DATE='2024-12-12T17:28:41.917821+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-12T17:28:41.917821+00:00'
+[2024-12-12T14:28:50.853-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-12-12T14:28:50.854-0300] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-12-12T14:28:50.855-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    export AWS_ACCESS_KEY_ID=ASIAWAA66KBXXMU7KCLM;\n    export AWS_SECRET_ACCESS_KEY=***;\n    export AWS_SESSION_TOKEN=***;\n    /opt/spark/bin/spark-submit         --packages org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.508         --conf spark.hadoop.fs.s3a.aws.credentials.provider=com.amazonaws.auth.DefaultAWSCredentialsProviderChain         --conf spark.hadoop.fs.s3a.endpoint=s3.amazonaws.com         --conf spark.hadoop.fs.s3a.region=us-east-1         /home/beatriz/Documentos/airflow/dags/tarefas/tarefas.py']
+[2024-12-12T14:28:50.863-0300] {subprocess.py:86} INFO - Output:
+[2024-12-12T14:28:52.726-0300] {subprocess.py:93} INFO - 24/12/12 14:28:52 WARN Utils: Your hostname, beatriz-linux resolves to a loopback address: 127.0.1.1; using 192.168.7.5 instead (on interface wlp0s20f3)
+[2024-12-12T14:28:52.729-0300] {subprocess.py:93} INFO - 24/12/12 14:28:52 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-12-12T14:28:52.969-0300] {subprocess.py:93} INFO - :: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2024-12-12T14:28:53.066-0300] {subprocess.py:93} INFO - Ivy Default Cache set to: /home/beatriz/.ivy2/cache
+[2024-12-12T14:28:53.067-0300] {subprocess.py:93} INFO - The jars for the packages stored in: /home/beatriz/.ivy2/jars
+[2024-12-12T14:28:53.071-0300] {subprocess.py:93} INFO - org.apache.hadoop#hadoop-aws added as a dependency
+[2024-12-12T14:28:53.071-0300] {subprocess.py:93} INFO - com.amazonaws#aws-java-sdk-bundle added as a dependency
+[2024-12-12T14:28:53.072-0300] {subprocess.py:93} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-7618f713-631d-43c5-b6f4-bd61261a5777;1.0
+[2024-12-12T14:28:53.072-0300] {subprocess.py:93} INFO - 	confs: [default]
+[2024-12-12T14:28:53.224-0300] {subprocess.py:93} INFO - 	found org.apache.hadoop#hadoop-aws;3.3.4 in central
+[2024-12-12T14:28:53.260-0300] {subprocess.py:93} INFO - 	found org.wildfly.openssl#wildfly-openssl;1.0.7.Final in central
+[2024-12-12T14:28:53.276-0300] {subprocess.py:93} INFO - 	found com.amazonaws#aws-java-sdk-bundle;1.12.508 in central
+[2024-12-12T14:28:53.296-0300] {subprocess.py:93} INFO - :: resolution report :: resolve 216ms :: artifacts dl 9ms
+[2024-12-12T14:28:53.296-0300] {subprocess.py:93} INFO - 	:: modules in use:
+[2024-12-12T14:28:53.296-0300] {subprocess.py:93} INFO - 	com.amazonaws#aws-java-sdk-bundle;1.12.508 from central in [default]
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	org.apache.hadoop#hadoop-aws;3.3.4 from central in [default]
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	org.wildfly.openssl#wildfly-openssl;1.0.7.Final from central in [default]
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	:: evicted modules:
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	com.amazonaws#aws-java-sdk-bundle;1.12.262 by [com.amazonaws#aws-java-sdk-bundle;1.12.508] in [default]
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	|                  |            modules            ||   artifacts   |
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2024-12-12T14:28:53.297-0300] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2024-12-12T14:28:53.298-0300] {subprocess.py:93} INFO - 	|      default     |   4   |   0   |   0   |   1   ||   3   |   0   |
+[2024-12-12T14:28:53.298-0300] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2024-12-12T14:28:53.300-0300] {subprocess.py:93} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-7618f713-631d-43c5-b6f4-bd61261a5777
+[2024-12-12T14:28:53.300-0300] {subprocess.py:93} INFO - 	confs: [default]
+[2024-12-12T14:28:53.305-0300] {subprocess.py:93} INFO - 	0 artifacts copied, 3 already retrieved (0kB/5ms)
+[2024-12-12T14:28:54.617-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SparkContext: Running Spark version 3.5.3
+[2024-12-12T14:28:54.617-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SparkContext: OS info Linux, 6.8.0-49-generic, amd64
+[2024-12-12T14:28:54.618-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SparkContext: Java version 11.0.25
+[2024-12-12T14:28:54.644-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO ResourceUtils: ==============================================================
+[2024-12-12T14:28:54.644-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2024-12-12T14:28:54.645-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO ResourceUtils: ==============================================================
+[2024-12-12T14:28:54.645-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SparkContext: Submitted application: Medallion Architecture
+[2024-12-12T14:28:54.669-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2024-12-12T14:28:54.682-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO ResourceProfile: Limiting resource is cpu
+[2024-12-12T14:28:54.682-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2024-12-12T14:28:54.747-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SecurityManager: Changing view acls to: beatriz
+[2024-12-12T14:28:54.748-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SecurityManager: Changing modify acls to: beatriz
+[2024-12-12T14:28:54.748-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SecurityManager: Changing view acls groups to:
+[2024-12-12T14:28:54.748-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SecurityManager: Changing modify acls groups to:
+[2024-12-12T14:28:54.749-0300] {subprocess.py:93} INFO - 24/12/12 14:28:54 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: beatriz; groups with view permissions: EMPTY; users with modify permissions: beatriz; groups with modify permissions: EMPTY
+[2024-12-12T14:28:55.053-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO Utils: Successfully started service 'sparkDriver' on port 38373.
+[2024-12-12T14:28:55.099-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkEnv: Registering MapOutputTracker
+[2024-12-12T14:28:55.153-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkEnv: Registering BlockManagerMaster
+[2024-12-12T14:28:55.181-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2024-12-12T14:28:55.181-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2024-12-12T14:28:55.185-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2024-12-12T14:28:55.211-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c3444126-200b-4c45-884d-3a9d710bee6e
+[2024-12-12T14:28:55.226-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2024-12-12T14:28:55.244-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkEnv: Registering OutputCommitCoordinator
+[2024-12-12T14:28:55.401-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2024-12-12T14:28:55.478-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2024-12-12T14:28:55.479-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[2024-12-12T14:28:55.487-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+[2024-12-12T14:28:55.532-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkContext: Added JAR /opt/spark/jars/hadoop-aws-3.3.4.jar at spark://192.168.7.5:38373/jars/hadoop-aws-3.3.4.jar with timestamp 1734024534608
+[2024-12-12T14:28:55.532-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkContext: Added JAR /opt/spark/jars/aws-java-sdk-bundle-1.12.508.jar at spark://192.168.7.5:38373/jars/aws-java-sdk-bundle-1.12.508.jar with timestamp 1734024534608
+[2024-12-12T14:28:55.536-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkContext: Added file file:///home/beatriz/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar at file:///home/beatriz/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar with timestamp 1734024534608
+[2024-12-12T14:28:55.537-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO Utils: Copying /home/beatriz/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/org.apache.hadoop_hadoop-aws-3.3.4.jar
+[2024-12-12T14:28:55.550-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO SparkContext: Added file file:///home/beatriz/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.508.jar at file:///home/beatriz/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.508.jar with timestamp 1734024534608
+[2024-12-12T14:28:55.551-0300] {subprocess.py:93} INFO - 24/12/12 14:28:55 INFO Utils: Copying /home/beatriz/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.508.jar to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/com.amazonaws_aws-java-sdk-bundle-1.12.508.jar
+[2024-12-12T14:28:56.149-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO SparkContext: Added file file:///home/beatriz/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar at file:///home/beatriz/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar with timestamp 1734024534608
+[2024-12-12T14:28:56.149-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Utils: Copying /home/beatriz/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar
+[2024-12-12T14:28:56.226-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Starting executor ID driver on host 192.168.7.5
+[2024-12-12T14:28:56.227-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: OS info Linux, 6.8.0-49-generic, amd64
+[2024-12-12T14:28:56.227-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Java version 11.0.25
+[2024-12-12T14:28:56.234-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2024-12-12T14:28:56.234-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5da6a1b7 for default.
+[2024-12-12T14:28:56.248-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Fetching file:///home/beatriz/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.508.jar with timestamp 1734024534608
+[2024-12-12T14:28:56.857-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Utils: /home/beatriz/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.508.jar has been previously copied to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/com.amazonaws_aws-java-sdk-bundle-1.12.508.jar
+[2024-12-12T14:28:56.860-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Fetching file:///home/beatriz/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar with timestamp 1734024534608
+[2024-12-12T14:28:56.863-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Utils: /home/beatriz/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.4.jar has been previously copied to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/org.apache.hadoop_hadoop-aws-3.3.4.jar
+[2024-12-12T14:28:56.865-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Fetching file:///home/beatriz/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar with timestamp 1734024534608
+[2024-12-12T14:28:56.866-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Utils: /home/beatriz/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar has been previously copied to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/org.wildfly.openssl_wildfly-openssl-1.0.7.Final.jar
+[2024-12-12T14:28:56.870-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Fetching spark://192.168.7.5:38373/jars/hadoop-aws-3.3.4.jar with timestamp 1734024534608
+[2024-12-12T14:28:56.916-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO TransportClientFactory: Successfully created connection to /192.168.7.5:38373 after 33 ms (0 ms spent in bootstraps)
+[2024-12-12T14:28:56.925-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Utils: Fetching spark://192.168.7.5:38373/jars/hadoop-aws-3.3.4.jar to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/fetchFileTemp160131289199256990.tmp
+[2024-12-12T14:28:56.955-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Adding file:/tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/hadoop-aws-3.3.4.jar to class loader default
+[2024-12-12T14:28:56.955-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Executor: Fetching spark://192.168.7.5:38373/jars/aws-java-sdk-bundle-1.12.508.jar with timestamp 1734024534608
+[2024-12-12T14:28:56.957-0300] {subprocess.py:93} INFO - 24/12/12 14:28:56 INFO Utils: Fetching spark://192.168.7.5:38373/jars/aws-java-sdk-bundle-1.12.508.jar to /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/fetchFileTemp2205391167772207215.tmp
+[2024-12-12T14:28:57.916-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO Executor: Adding file:/tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/userFiles-ef4b747e-374e-4c11-be1c-e05331811735/aws-java-sdk-bundle-1.12.508.jar to class loader default
+[2024-12-12T14:28:57.940-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44889.
+[2024-12-12T14:28:57.940-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO NettyBlockTransferService: Server created on 192.168.7.5:44889
+[2024-12-12T14:28:57.943-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2024-12-12T14:28:57.957-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.7.5, 44889, None)
+[2024-12-12T14:28:57.963-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.7.5:44889 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.7.5, 44889, None)
+[2024-12-12T14:28:57.967-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.7.5, 44889, None)
+[2024-12-12T14:28:57.969-0300] {subprocess.py:93} INFO - 24/12/12 14:28:57 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.7.5, 44889, None)
+[2024-12-12T14:28:58.762-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO SparkContext: Invoking stop() from shutdown hook
+[2024-12-12T14:28:58.762-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2024-12-12T14:28:58.771-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO SparkUI: Stopped Spark web UI at http://192.168.7.5:4042
+[2024-12-12T14:28:58.786-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2024-12-12T14:28:58.799-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO MemoryStore: MemoryStore cleared
+[2024-12-12T14:28:58.800-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO BlockManager: BlockManager stopped
+[2024-12-12T14:28:58.809-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2024-12-12T14:28:58.813-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2024-12-12T14:28:58.836-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO SparkContext: Successfully stopped SparkContext
+[2024-12-12T14:28:58.836-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO ShutdownHookManager: Shutdown hook called
+[2024-12-12T14:28:58.837-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO ShutdownHookManager: Deleting directory /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4/pyspark-2ba5a96a-975c-4503-9068-6494d493043f
+[2024-12-12T14:28:58.840-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO ShutdownHookManager: Deleting directory /tmp/spark-1775a61c-c57a-4861-b52c-19389f07f029
+[2024-12-12T14:28:58.844-0300] {subprocess.py:93} INFO - 24/12/12 14:28:58 INFO ShutdownHookManager: Deleting directory /tmp/spark-40cb046b-944b-4db0-9d15-5505f79d7ca4
+[2024-12-12T14:28:58.896-0300] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-12-12T14:28:58.897-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-12-12T14:28:58.911-0300] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=medallion_architecture, task_id=spark_submit, execution_date=20241212T172841, start_date=20241212T172850, end_date=20241212T172858
+[2024-12-12T14:28:58.954-0300] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-12-12T14:28:58.972-0300] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-12T14:28:58.977-0300] {local_task_job_runner.py:222} INFO - ::endgroup::

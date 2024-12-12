@@ -1,0 +1,71 @@
+[2024-12-12T14:23:25.645-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-12-12T14:23:25.653-0300] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: medallion_architecture.spark_submit manual__2024-12-12T17:23:16.926727+00:00 [queued]>
+[2024-12-12T14:23:25.659-0300] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: medallion_architecture.spark_submit manual__2024-12-12T17:23:16.926727+00:00 [queued]>
+[2024-12-12T14:23:25.660-0300] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-12-12T14:23:25.673-0300] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): spark_submit> on 2024-12-12 17:23:16.926727+00:00
+[2024-12-12T14:23:25.678-0300] {standard_task_runner.py:63} INFO - Started process 158683 to run task
+[2024-12-12T14:23:25.679-0300] {clientserver.py:543} INFO - Closing down clientserver connection
+[2024-12-12T14:23:25.682-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'medallion_architecture', 'spark_submit', 'manual__2024-12-12T17:23:16.926727+00:00', '--job-id', '145', '--raw', '--subdir', 'DAGS_FOLDER/dag2.py', '--cfg-path', '/tmp/tmpoc_1sblx']
+[2024-12-12T14:23:25.684-0300] {standard_task_runner.py:91} INFO - Job 145: Subtask spark_submit
+[2024-12-12T14:23:25.713-0300] {task_command.py:426} INFO - Running <TaskInstance: medallion_architecture.spark_submit manual__2024-12-12T17:23:16.926727+00:00 [running]> on host beatriz-linux
+[2024-12-12T14:23:25.771-0300] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='medallion_architecture' AIRFLOW_CTX_TASK_ID='spark_submit' AIRFLOW_CTX_EXECUTION_DATE='2024-12-12T17:23:16.926727+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-12T17:23:16.926727+00:00'
+[2024-12-12T14:23:25.772-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2024-12-12T14:23:25.773-0300] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-12-12T14:23:25.774-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    export AWS_ACCESS_KEY_ID=ASIAWAA66KBXXMU7KCLM;\n    export AWS_SECRET_ACCESS_KEY=***;\n    export AWS_SESSION_TOKEN=***;\n    /opt/spark/bin/spark-submit         --packages org.apache.hadoop:hadoop-aws:3.3.4,com.amazonaws:aws-java-sdk-bundle:1.12.508         --conf spark.hadoop.fs.s3a.aws.credentials.provider=com.amazonaws.auth.DefaultAWSCredentialsProviderChain         --conf spark.hadoop.fs.s3a.endpoint=s3.amazonaws.com         --conf spark.hadoop.fs.s3a.region=us-east-1         /opt/spark/conf/spark-defaults.conf']
+[2024-12-12T14:23:25.783-0300] {subprocess.py:86} INFO - Output:
+[2024-12-12T14:23:27.732-0300] {subprocess.py:93} INFO - 24/12/12 14:23:27 WARN Utils: Your hostname, beatriz-linux resolves to a loopback address: 127.0.1.1; using 192.168.7.5 instead (on interface wlp0s20f3)
+[2024-12-12T14:23:27.734-0300] {subprocess.py:93} INFO - 24/12/12 14:23:27 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-12-12T14:23:27.978-0300] {subprocess.py:93} INFO - :: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2024-12-12T14:23:28.070-0300] {subprocess.py:93} INFO - Ivy Default Cache set to: /home/beatriz/.ivy2/cache
+[2024-12-12T14:23:28.070-0300] {subprocess.py:93} INFO - The jars for the packages stored in: /home/beatriz/.ivy2/jars
+[2024-12-12T14:23:28.076-0300] {subprocess.py:93} INFO - org.apache.hadoop#hadoop-aws added as a dependency
+[2024-12-12T14:23:28.076-0300] {subprocess.py:93} INFO - com.amazonaws#aws-java-sdk-bundle added as a dependency
+[2024-12-12T14:23:28.077-0300] {subprocess.py:93} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-58a505b2-2551-46ba-b954-ab3abc71bce4;1.0
+[2024-12-12T14:23:28.078-0300] {subprocess.py:93} INFO - 	confs: [default]
+[2024-12-12T14:23:28.233-0300] {subprocess.py:93} INFO - 	found org.apache.hadoop#hadoop-aws;3.3.4 in central
+[2024-12-12T14:23:28.267-0300] {subprocess.py:93} INFO - 	found org.wildfly.openssl#wildfly-openssl;1.0.7.Final in central
+[2024-12-12T14:23:28.283-0300] {subprocess.py:93} INFO - 	found com.amazonaws#aws-java-sdk-bundle;1.12.508 in central
+[2024-12-12T14:23:28.300-0300] {subprocess.py:93} INFO - :: resolution report :: resolve 215ms :: artifacts dl 7ms
+[2024-12-12T14:23:28.300-0300] {subprocess.py:93} INFO - 	:: modules in use:
+[2024-12-12T14:23:28.301-0300] {subprocess.py:93} INFO - 	com.amazonaws#aws-java-sdk-bundle;1.12.508 from central in [default]
+[2024-12-12T14:23:28.301-0300] {subprocess.py:93} INFO - 	org.apache.hadoop#hadoop-aws;3.3.4 from central in [default]
+[2024-12-12T14:23:28.301-0300] {subprocess.py:93} INFO - 	org.wildfly.openssl#wildfly-openssl;1.0.7.Final from central in [default]
+[2024-12-12T14:23:28.301-0300] {subprocess.py:93} INFO - 	:: evicted modules:
+[2024-12-12T14:23:28.301-0300] {subprocess.py:93} INFO - 	com.amazonaws#aws-java-sdk-bundle;1.12.262 by [com.amazonaws#aws-java-sdk-bundle;1.12.508] in [default]
+[2024-12-12T14:23:28.301-0300] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2024-12-12T14:23:28.301-0300] {subprocess.py:93} INFO - 	|                  |            modules            ||   artifacts   |
+[2024-12-12T14:23:28.302-0300] {subprocess.py:93} INFO - 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2024-12-12T14:23:28.302-0300] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2024-12-12T14:23:28.302-0300] {subprocess.py:93} INFO - 	|      default     |   4   |   0   |   0   |   1   ||   3   |   0   |
+[2024-12-12T14:23:28.302-0300] {subprocess.py:93} INFO - 	---------------------------------------------------------------------
+[2024-12-12T14:23:28.305-0300] {subprocess.py:93} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-58a505b2-2551-46ba-b954-ab3abc71bce4
+[2024-12-12T14:23:28.305-0300] {subprocess.py:93} INFO - 	confs: [default]
+[2024-12-12T14:23:28.311-0300] {subprocess.py:93} INFO - 	0 artifacts copied, 3 already retrieved (0kB/6ms)
+[2024-12-12T14:23:28.762-0300] {subprocess.py:93} INFO - Exception in thread "main" org.apache.spark.SparkException: Failed to get main class in JAR with error 'File file:/opt/spark/conf/spark-defaults.conf does not exist'.  Please specify one with --class.
+[2024-12-12T14:23:28.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.error(SparkSubmit.scala:1047)
+[2024-12-12T14:23:28.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.prepareSubmitEnvironment(SparkSubmit.scala:528)
+[2024-12-12T14:23:28.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:964)
+[2024-12-12T14:23:28.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+[2024-12-12T14:23:28.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+[2024-12-12T14:23:28.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+[2024-12-12T14:23:28.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+[2024-12-12T14:23:28.764-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+[2024-12-12T14:23:28.764-0300] {subprocess.py:93} INFO - 	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2024-12-12T14:23:28.813-0300] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-12-12T14:23:28.814-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-12-12T14:23:28.819-0300] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/beatriz/Documentos/airflow/airflow_venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-12-12T14:23:28.823-0300] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=medallion_architecture, task_id=spark_submit, execution_date=20241212T172316, start_date=20241212T172325, end_date=20241212T172328
+[2024-12-12T14:23:28.836-0300] {standard_task_runner.py:110} ERROR - Failed to execute job 145 for task spark_submit (Bash command failed. The command returned a non-zero exit code 1.; 158683)
+[2024-12-12T14:23:28.861-0300] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-12-12T14:23:28.877-0300] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-12T14:23:28.883-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
